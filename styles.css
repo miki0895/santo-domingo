@@ -1,0 +1,301 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* HEADER PRO */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+  background: url('logos/ENCABEZADO.png') no-repeat center;
+  background-size: cover;
+
+  padding: 0 40px;
+  transition: all 0.4s ease;
+}
+
+/* EFECTO VIDRIO AL SCROLL */
+.header.scrolled {
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* CONTENEDORES */
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* LOGO */
+.left img {
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.left img:hover {
+  transform: scale(1.05);
+}
+
+/* TEXTO */
+.school-name1 {
+    font-family: "Brush Script MT", cursive;
+    font-size: 2em;
+    color: #fff;
+}
+
+.school-name2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* MENÚ */
+.right a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 14px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* EFECTO LINEA */
+.right a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #f4b400;
+  transition: 0.3s;
+}
+
+.right a:hover::after {
+  width: 100%;
+}
+
+/* SCROLL TEXTO */
+.header.scrolled .right a,
+.header.scrolled .school-name1,
+.header.scrolled .school-name2 {
+  color: #000;
+}
+
+/* HERO PRO */
+.hero {
+    height: 90vh;
+    background: url('imagenes/11.png') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    margin-top: 80px;
+}
+
+/* OVERLAY OSCURO */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+}
+
+.hero h1, .hero p, .hero button {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+/* ANIMACIÓN ENTRADA */
+.hero h1 {
+    font-size: 4em;
+    font-family: "BlondeScript", cursive;
+    color: #FDC700;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    max-width: 900px;
+    font-weight: normal;
+}
+
+.hero p {
+    margin-top: 10px;
+    animation: fadeUp 1.5s ease;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: #f4b400;
+    color: black;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    animation: fadeUp 2s ease;
+}
+
+.hero button:hover {
+    transform: scale(1.05);
+    background: #ffd84d;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "BlondeScript";
+    src: url("fonts/BlondeScript-Regular.ttf") format("truetype");
+	
+}
+
+
+/* ANIMACIÓN */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SECCIONES */
+.about, .admissions {
+    padding: 60px;
+    text-align: center;
+}
+
+/* CARDS PRO */
+.cards {
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.card {
+    width: 30%;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* FEATURES */
+.features {
+    background: #f5f7fa;
+    padding: 60px;
+    text-align: center;
+}
+
+/* CONTACTO PRO */
+.contact {
+    background: linear-gradient(135deg, #0a2a4a, #123b63);
+    color: white;
+    padding: 60px;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 80%;
+    border-radius: 8px;
+    border: none;
+}
+
+.contact button {
+    background: #f4b400;
+    color: black;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #ffd84d;
+    transform: scale(1.05);
+}
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* TÍTULO */
+.about h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+/* PÁRRAFO CENTRADO Y JUSTIFICADO */
+.about p {
+    max-width: 1000px;   /* controla el ancho para que se vea elegante */
+    margin: 0 auto;     /* centra el bloque */
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Santo Domingo de Guzmán</title>
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="NOSOTROS.css">
+</head>
+<body>
+
+<header class="header">
+
+    <div class="left">
+        <img src="logos/Insignia.png" alt="Logo institucional">
+        <span class="school-name1">Colegio</span>
+        <span class="school-name2">SANTO DOMINGO DE GUZMÁN</span>
+    </div>
+
+    <nav class="right">
+        <a href="INICIO2222 - Copia.html">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Niveles</a>
+        <a href="#">Contacto</a>
+		<a href="#">Plataformas</a>
+    </nav>
+
+</header>
+
+<section class="video-section">
+
+    <div class="video-container">
+        <video controls autoplay muted playsinline>
+           <source src="videos/1.mp4" type="video/mp4">
+           Tu navegador no soporta video.
+        </video>
+    </div>
+
+    <section class="video-text">
+    <div class="video-text-content">
+        <h2>Colegio Santo Domingo de Guzmán</h2>
+        <p>
+            Con más de 35 años de trayectoria en San Juan de Lurigancho, nuestro colegio se ha consolidado como una institución líder en formación integral. Apostamos por la excelencia académica, la innovación tecnológica y el desarrollo de valores que forman estudiantes preparados para los retos del futuro.
+        </p>
+    </div>
+</section>
+
+</section>
+	
+<section class="mv-section">
+
+    <!-- MISIÓN -->
+    <div class="mv-block">
+        <div class="mv-img">
+            <img src="imagenes/36.jpg" alt="Misión">
+        </div>
+        <div class="mv-text">
+            <h2>Misión</h2>
+            <p>
+                Somos una institución educativa comprometida con la formación integral de nuestros estudiantes, promoviendo el desarrollo de competencias, valores y habilidades que les permitan desenvolverse con éxito en la sociedad, fomentando el uso de la tecnología, el trabajo en equipo y el pensamiento crítico.
+            </p>
+        </div>
+    </div>
+
+    <!-- VISIÓN -->
+    <div class="mv-block">
+        <div class="mv-img">
+            <img src="imagenes/25.jpg" alt="Visión">
+        </div>
+        <div class="mv-text">
+            <h2>Visión</h2>
+            <p>
+                Ser una institución educativa líder, reconocida por su excelencia académica y formación en valores, que impulse el desarrollo integral de sus estudiantes, preparándolos para afrontar los desafíos del mundo actual con responsabilidad, innovación y liderazgo.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+
+	
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- LOGO + REDES -->
+        <div class="footer-col">
+            <img src="logos/blanco.png" class="footer-logo" alt="SDG">
+
+            <p>Síguenos en:</p>
+            <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <!-- NOSOTROS -->
+        <div class="footer-col">
+            <h3>Nosotros</h3>
+            <ul>
+                <li><a href="#">Historia</a></li>
+                <li><a href="#">Misión y Visión</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Perfil del Estudiante</a></li>
+            </ul>
+        </div>
+
+        <!-- ACADÉMICO -->
+        <div class="footer-col">
+            <h3>Académico</h3>
+            <ul>
+                <li><a href="#">Nivel Inicial</a></li>
+                <li><a href="#">Nivel Primaria</a></li>
+                <li><a href="#">Nivel Secundaria</a></li>
+                <li><a href="#">Talleres</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="footer-col">
+            <h3>Contáctenos</h3>
+            <p>📍 San Juan de Lurigancho, Lima - Perú</p>
+            <p>✉️ admision@sdg.edu.pe</p>
+            <p class="phone">📞 (01) 123-4567</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p style="color: #FFFFFF">Política de privacidad de datos | © 2026 Colegio Santo Domingo de Guzmán</p>
+    </div>
+
+</footer>
+
+<script>
+window.addEventListener("scroll", function() {
+    const header = document.querySelector(".header");
+
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+</script>
+
+<script>
+const elements = document.querySelectorAll('.card, .about, .features, .cards');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 50) {
+            el.classList.add('visible');
+        }
+    });
+});
+</script>
+	
+<script>
+const elementos = document.querySelectorAll('.fade-up, .anim-line');
+
+function mostrarAnimacion() {
+    elementos.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 50) {
+            el.classList.add('visible');
+        }
+    });
+}
+
+window.addEventListener('scroll', mostrarAnimacion);
+window.addEventListener('load', mostrarAnimacion);
+</script>	
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+    link.removeAttribute("target");
+});
+</script>	
+	
+</body>
+</html>
