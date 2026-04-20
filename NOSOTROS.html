@@ -20,35 +20,123 @@
         <span class="school-name2">SANTO DOMINGO DE GUZMÁN</span>
     </div>
 
-    <nav class="right">
-        <a href="index.html">Inicio</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Niveles</a>
-        <a href="#">Contacto</a>
-		<a href="#">Plataformas</a>
-    </nav>
+    <nav class="right" id="menu">
+    <ul class="menu-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="NOSOTROS.html">Nosotros</a></li>
+
+        <li class="has-submenu">
+            <a href="#">Niveles ▾</a>
+            <ul class="submenu">
+                <li><a href="INICIAL.html">Nivel Inicial</a></li>
+                <li><a href="PRIMARIA.html">Nivel Primaria</a></li>
+                <li><a href="SECUNDARIA.html">Nivel Secundaria</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Plataformas</a></li>
+    </ul>
+</nav>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
 
 </header>
 
 <section class="video-section">
 
     <div class="video-container">
-        <video controls autoplay muted playsinline>
-           <source src="videos/1.mp4" type="video/mp4">
-           Tu navegador no soporta video.
-        </video>
+        <iframe 
+            src="https://www.youtube.com/embed/LlubsOdmMnU"
+            title="Video institucional"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
     </div>
+
+</section>
+
 
     <section class="video-text">
     <div class="video-text-content">
         <h2>Colegio Santo Domingo de Guzmán</h2>
         <p>
-            Con más de 35 años de trayectoria en San Juan de Lurigancho, nuestro colegio se ha consolidado como una institución líder en formación integral. Apostamos por la excelencia académica, la innovación tecnológica y el desarrollo de valores que forman estudiantes preparados para los retos del futuro.
+            La Institución Educativa Privada “Santo Domingo de Guzmán” fue creado por el Dr. Danilo de la Cruz Moreno en el mes de abril del año 1982, en la ciudad de Lima, en el distrito de san Juan de Lurigancho, la cual, abrió sus puertas e inicio el servicio educativo con 322 estudiantes en los niveles de inicial, primaria y secundaria. Contaba con un área de terreno de 200 m2 con siete ambientes en su primera y segunda planta. En la primera planta además de las cuatro aulas, se habilitaron los ambientes para la dirección, secretaría y tesorería. Los primeros años, desde 1983 hasta 1990 se organizaban diversas actividades en las cuales participaban el personal directivo, profesores, estudiantes y padres de familia con la finalidad de integrar a todos los miembros que conformaban la institución educativa, para brindar un servicio de calidad basado en la convivencia escolar, equidad e igualdad de derechos. La Institución Educativa mantiene vigente la frase “LA UNIÓN HACE LA FUERZA”, la cual ha sido uno de los pilares para poder ejecutar con éxito cada de una de las actividades académicas, además, la que nos ha permitido con los años ser una entidad educativa grande y triunfadora dirigida desde sus inicios, con gran esfuerzo y tesón, por el Dr. Danilo de la Cruz Moreno, logrando ser una de las mejores instituciones educativas. Actualmente contamos con un equipo de profesionales comprometidos con la educación, desarrollando en unión cada día para ejercer con responsabilidad las acciones encomendadas para el logro de las competencias según el currículo nacional de educación básica.
         </p>
     </div>
 </section>
 
+<section class="promo-section">
+
+    <!-- LADO IZQUIERDO (TEXTO) -->
+    <div class="promo-text">
+        <h2>DIRECTOR FUNDADOR</h2>
+        <p>
+            El Dr. Danilo De la Cruz Moreno, nace en el distrito de Tauca, en la región de Ancash, desde muy niño su vocación de servicio hizo que viajara a Lima, con el objetivo de ser importante en la vida, es así que descubre su vocación por la educación. Fue un gran maestro de aula; pero, existía ese gran sueño llegar a construir su propia institución educativa fue entonces que con esa percepción indómita funda el colegio “Santo Domingo de Guzmán” en las Flores.
+            <strong>Conoce mas...</strong>
+        </p>
+
+        <button class="btn-promo">Conoce mi historia</button>
+    </div>
+
+    <!-- LADO DERECHO (IMAGEN) -->
+    <div class="promo-image">
+        <img src="imagenes/54.png" alt="Instalaciones">
+    </div>
+
 </section>
+	
+<section class="valores fade-up">
+
+    <div class="valores-container">
+
+        <!-- TEXTO IZQUIERDA -->
+        <div class="valores-text">
+            <h2>¿QUÉ VALORES PRACTICAMOS EN NUESTRO TRABAJO DIARIO?</h2>
+            <p>
+                La IEP “Santo Domingo de Guzmán”, en su PEI fundamenta su propuesta en los siguientes
+valores o Línea Axiológica de acuerdo al diagnóstico y a lo que se desea alcanzar como parte
+del Perfil del estudiante al culminar la Educación Básica, asume la tarea educativa como una
+forma loable de participación en la misión emprendida por nuestro Santo Patrono y ofrecemos
+un modelo de educación integral, humanizadora y personalizada. Aspiramos a una educación
+de calidad portadora de valores, profundamente humanos y cristianos.
+                <br><br>
+               Desde esta visión y en función de un pluralismo enriquecedor que reconoce la diversidad, la
+IEP “Santo Domingo de Guzmán” opta por la apertura a todos los sectores de la sociedad sin
+distinción deseando impartir una educación de calidad y con sentido social.
+            </p>
+        </div>
+
+	
+        <!-- IMAGEN + BOTONES -->
+        <div class="valores-media">
+
+            <img src="imagenes/24.jpg" alt="Valores">
+
+            <div class="valores-tags">
+                <span>Puntualidad</span>
+                <span>Respeto</span>
+                <span>Tolerancia</span>
+                <span>Autonomía</span>
+                <span>Justicia</span>
+                <span>Solidaridad</span>
+                <span>Honestidad</span>
+                <span>Empatía</span>
+                <span>Lealtad</span>
+                <span>Amor</span>
+                <span>Responsabilidad</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>	
+	
 	
 <section class="mv-section">
 
@@ -60,7 +148,7 @@
         <div class="mv-text">
             <h2>Misión</h2>
             <p>
-                Somos una institución educativa comprometida con la formación integral de nuestros estudiantes, promoviendo el desarrollo de competencias, valores y habilidades que les permitan desenvolverse con éxito en la sociedad, fomentando el uso de la tecnología, el trabajo en equipo y el pensamiento crítico.
+                "Somos una Institución Educativa Privada de alta demanda al servicio de la comunidad educativa que brinda las condiciones necesarias a través de los Compromisos de Gestión Escolar. Estamos comprometidos en que todos nuestros estudiantes consoliden las competencias en cada uno de los grados de los niveles correspondientes y que en el marco del Currículo Nacional de Educación Básica (CNEB), puedan culminar la escolaridad de manera satisfactoria a través de la construcción de sus propios aprendizajes en base a la experimentación, reflexión, trabajo en equipo y mística dominguina. Todo ello orientado en lograr la excelencia de cada estudiante por alcanzar su desarrollo integral; promoviendo el uso educativo de las tecnologías de la información y las comunicaciones, fortaleciendo el desarrollo de habilidades que impacten de manera positiva en los procesos de enseñanza y aprendizaje de cada uno de los agentes educativos. Para eso, contamos con el equipamiento y conectividad en toda la institución, haciendo uso de una infraestructura moderna y segura con espacios inclusivos, de sana convivencia y libres de violencia, por lo que: "Nacimos para ser los mejores".
             </p>
         </div>
     </div>
@@ -73,7 +161,7 @@
         <div class="mv-text">
             <h2>Visión</h2>
             <p>
-                Ser una institución educativa líder, reconocida por su excelencia académica y formación en valores, que impulse el desarrollo integral de sus estudiantes, preparándolos para afrontar los desafíos del mundo actual con responsabilidad, innovación y liderazgo.
+                "Ser reconocidos como una Institución Educativa Privada líder que contribuye al cambio sociocultural, demostrando nuestro eficiente desarrollo e impulso de las tecnologías de la información y la comunicación para promover la calidad en los logros de los actores educativos, los cuales, se manifiestan en el desarrollo de las competencias buscando que todos sus estudiantes mejoren su condición de vida, incorporando los adelantos del desarrollo tecnológico y se desarrollen integralmente desde la infancia, formando ciudadanos competentes y capaces de resolver con éxito los problemas que se les presente; que asuman una actitud activa, crítica, analítica y responsable frente a los hechos de su entorno, practiquen los valores basados en los principios de la Educación Peruana, evaluando a los demás y autoevaluándose para seguir aprendiendo, asumiéndose como ciudadanos con derechos y responsabilidades; combinando su capital cultural y natural con los avances mundiales en concordancia en el marco de los once aspectos del perfil de egreso del Currículo Nacional de la Educación Básica (CNEB)".
             </p>
         </div>
     </div>
@@ -102,10 +190,10 @@
         <div class="footer-col">
             <h3>Nosotros</h3>
             <ul>
-                <li><a href="#">Historia</a></li>
-                <li><a href="#">Misión y Visión</a></li>
-                <li><a href="#">Valores</a></li>
-                <li><a href="#">Perfil del Estudiante</a></li>
+                <li><a href="NOSOTROS.html">Historia</a></li>
+                <li><a href="NOSOTROS.html">Misión y Visión</a></li>
+                <li><a href="NOSOTROS">Valores</a></li>
+                <li><a href="PRIMARIA.html">Perfil del Estudiante</a></li>
             </ul>
         </div>
 
@@ -113,9 +201,9 @@
         <div class="footer-col">
             <h3>Académico</h3>
             <ul>
-                <li><a href="#">Nivel Inicial</a></li>
-                <li><a href="#">Nivel Primaria</a></li>
-                <li><a href="#">Nivel Secundaria</a></li>
+                <li><a href="INICIAL.html">Nivel Inicial</a></li>
+                <li><a href="PRIMARIA.html">Nivel Primaria</a></li>
+                <li><a href="SECUNDARIA.html">Nivel Secundaria</a></li>
                 <li><a href="#">Talleres</a></li>
             </ul>
         </div>
@@ -135,7 +223,10 @@
     </div>
 
 </footer>
-
+	
+</body>
+	
+	
 <script>
 window.addEventListener("scroll", function() {
     const header = document.querySelector(".header");
@@ -185,5 +276,47 @@ document.querySelectorAll("a").forEach(link => {
 });
 </script>	
 	
-</body>
+	<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    const links = document.querySelectorAll("#menu a");
+
+    toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+        toggle.classList.toggle("active");
+    });
+
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("active");
+            toggle.classList.remove("active");
+        });
+    });
+
+    document.addEventListener("click", (e) => {
+        if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+            menu.classList.remove("active");
+            toggle.classList.remove("active");
+        }
+    });
+
+});
+</script>
+	
+<script>
+document.querySelectorAll(".has-submenu > a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        if (window.innerWidth < 768) {
+            e.preventDefault();
+            const submenu = this.nextElementSibling;
+            submenu.classList.toggle("active");
+        }
+    });
+});
+</script>	
+	
+	
+	
 </html>
